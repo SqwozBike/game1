@@ -1,0 +1,132 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style1.css">
+        <script src="script1.js"></script>
+    </head>
+    <body onload="start()">
+        <form id="frm"><br>
+            <div id="hint"></div>
+            <div id="time">
+                <input type="text" id="seconds" value="15" autocomplete="off"> <br>
+                Rundenlänge in Sekunden (anpassbar)
+            </div>
+            <div id="answerfield">
+            </div>
+            <div id="timer"></div>
+            <div id="kboard">
+                <table class="keyboard">
+                    <tr>
+                      <td>
+                        <button type="button" onclick="letter(this)">q</button>
+                      </td>
+                      <td>
+                        <button type="button" onclick="letter(this)">w</button>
+                      </td>
+                      <td>
+                        <button type="button" onclick="letter(this)">e</button>
+                      </td>
+                      <td>
+                        <button type="button" onclick="letter(this)">r</button>
+                      </td>
+                      <td>
+                        <button type="button" onclick="letter(this)">t</button>
+                      </td>
+                      <td>
+                        <button type="button" onclick="letter(this)">z</button>
+                      </td>
+                      <td>
+                        <button type="button" onclick="letter(this)">u</button>
+                      </td>
+                      <td>
+                        <button type="button" onclick="letter(this)">i</button>
+                      </td>
+                      <td>
+                        <button type="button" onclick="letter(this)">o</button>
+                      </td>
+                      <td>
+                        <button type="button" onclick="letter(this)">p</button>
+                      </td>
+                      <td>
+                        <button type="button" onclick="letter(this)">ü</button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <button type="button" onclick="letter(this)">a</button>
+                      </td>
+                      <td>
+                        <button type="button" onclick="letter(this)">s</button>
+                      </td>
+                      <td>
+                        <button type="button" onclick="letter(this)">d</button>
+                      </td>
+                      <td>
+                        <button type="button" onclick="letter(this)">f</button>
+                      </td>
+                      <td>
+                        <button type="button" onclick="letter(this)">g</button>
+                      </td>
+                      <td>
+                        <button type="button" onclick="letter(this)">h</button>
+                      </td>
+                      <td>
+                        <button type="button" onclick="letter(this)">j</button>
+                      </td>
+                      <td>
+                        <button type="button" onclick="letter(this)">k</button>
+                      </td>
+                      <td>
+                        <button type="button" onclick="letter(this)">l</button>
+                      </td>
+                      <td>
+                        <button type="button" onclick="letter(this)">ö</button>
+                      </td>
+                      <td>
+                        <button type="button" onclick="letter(this)">ä</button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                      </td>
+                      <td>
+                        <button type="button" onclick="letter(this)">y</button>
+                      </td>
+                      <td>
+                        <button type="button" onclick="letter(this)">x</button>
+                      </td>
+                      <td>
+                        <button type="button" onclick="letter(this)">c</button>
+                      </td>
+                      <td>
+                        <button type="button" onclick="letter(this)">v</button>
+                      </td>
+                      <td>
+                        <button type="button" onclick="letter(this)">b</button>
+                      </td>
+                      <td>
+                        <button type="button" onclick="letter(this)">n</button>
+                      </td>
+                      <td>
+                        <button type="button" onclick="letter(this)">m</button>
+                      </td>
+                      </tr>
+                    </table>
+            </div>
+            <div id="stepsover">
+                Schritte verbleiben: <div id="steps"></div>
+                <input type="text" id="chngsteps" autocomplete="off">
+            </div>
+            <div id="quickansw">
+                &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="answ" autocomplete="off"> <input type="button" id="submit" value="ok" onclick="output(true)"> <br>
+                Verwenden Sie dieses Feld, um eine vorzeitige Antwort zu geben <br> (alles oder nichts)
+            </div>
+            <dialog>
+                <form method="dialog">
+                    <p>Antwort:</p>
+                    <p id="ans"><div id="outputansw"></div></p><br>
+                    <button type="button" id="reload" onclick="location.reload()">Spiel wieder</button>
+                </form>
+              </dialog>
+        </form>
+    </body>
+</html>

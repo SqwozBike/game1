@@ -1,0 +1,140 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body onload="start()">
+        <form id="frm"><br>
+            <div id="hint"></div>
+            <div id="time">
+                <input type="text" id="seconds" value="15" autocomplete="off"> <br>
+                Продолжительность раунда в секундах (можно изменить)
+            </div>
+            <div id="answerfield">
+            </div>
+            <div id="timer"></div>
+            <div id="kboard">
+            <table class="keyboard">
+                <tr>
+                    <td>
+                        <button type="button" onclick="letter(this)">й</button>
+                    </td>
+                    <td>
+                        <button type="button" onclick="letter(this)">ц</button>
+                    </td>
+                    <td>
+                        <button type="button" onclick="letter(this)">у</button>
+                    </td>
+                    <td>
+                        <button type="button" onclick="letter(this)">к</button>
+                    </td>
+                    <td>
+                        <button type="button" onclick="letter(this)">е</button>
+                    </td>
+                    <td>
+                        <button type="button" onclick="letter(this)">н</button>
+                    </td>
+                    <td>
+                        <button type="button" onclick="letter(this)">г</button>
+                    </td>
+                    <td>
+                        <button type="button" onclick="letter(this)">ш</button>
+                    </td>
+                    <td>
+                        <button type="button" onclick="letter(this)">щ</button>
+                    </td>
+                    <td>
+                        <button type="button" onclick="letter(this)">з</button>
+                    </td>
+                    <td>
+                        <button type="button" onclick="letter(this)">х</button>
+                    </td>
+                    <td>
+                        <button type="button" onclick="letter(this)">ъ</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="button" onclick="letter(this)">ф</button>
+                    </td>
+                    <td>
+                        <button type="button" onclick="letter(this)">ы</button>
+                    </td>
+                    <td>
+                        <button type="button" onclick="letter(this)">в</button>
+                    </td>
+                    <td>
+                        <button type="button" onclick="letter(this)">а</button>
+                    </td>
+                    <td>
+                        <button type="button" onclick="letter(this)">п</button>
+                    </td>
+                    <td>
+                        <button type="button" onclick="letter(this)">р</button>
+                    </td>
+                    <td>
+                        <button type="button" onclick="letter(this)">о</button>
+                    </td>
+                    <td>
+                        <button type="button" onclick="letter(this)">л</button>
+                    </td>
+                    <td>
+                        <button type="button" onclick="letter(this)">д</button>
+                    </td>
+                    <td>
+                        <button type="button" onclick="letter(this)">ж</button>
+                    </td>
+                    <td>
+                        <button type="button" onclick="letter(this)">э</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    </td>
+                    <td>
+                        <button type="button" onclick="letter(this)">я</button>
+                    </td>
+                    <td>
+                        <button type="button" onclick="letter(this)">ч</button>
+                    </td>
+                    <td>
+                        <button type="button" onclick="letter(this)">с</button>
+                    </td>
+                    <td>
+                        <button type="button" onclick="letter(this)">м</button>
+                    </td>
+                    <td>
+                        <button type="button" onclick="letter(this)">и</button>
+                    </td>
+                    <td>
+                        <button type="button" onclick="letter(this)">т</button>
+                    </td>
+                    <td>
+                        <button type="button" onclick="letter(this)">ь</button>
+                    </td>
+                    <td>
+                        <button type="button" onclick="letter(this)">б</button>
+                    </td>
+                    <td>
+                        <button type="button" onclick="letter(this)">ю</button>
+                    </td>
+                </tr>
+            </table>
+            </div>
+            <div id="stepsover">
+                шагов осталось: <div id="steps"><input type="text" id="chngsteps" autocomplete="off"></div>
+            </div>
+            <div id="quickansw">
+                &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="answ" autocomplete="off"> <input type="button" id="submit" value="ok" onclick="output(true)"> <br>
+                Используйте это поле чтобы дать преждевременный ответ <br> (все или ничего)
+            </div>
+            <dialog>
+                <form method="dialog">
+                    <p>Ответ:</p>
+                    <p id="ans"><div id="outputansw"></div></p><br>
+                    <button type="button" id="reload" onclick="location.reload()">играть снова</button>
+                </form>
+              </dialog>
+        </form>
+    </body>
+</html>
